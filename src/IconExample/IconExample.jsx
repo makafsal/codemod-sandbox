@@ -1,5 +1,5 @@
 import React from "react";
-import { Add } from "@carbon/react/icons";
+import { Add } from '@carbon/icons-react';
 
 function IconExample() {
   return (
