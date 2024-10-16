@@ -1,0 +1,17 @@
+name: Add Review Labels
+on: [pull_request_target]
+jobs:
+  pr_opened:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+      issues: write
+      pull-requests: write
+    if: ${{contains(github.event_name, 'pull_request_target')}}
+    steps:
+      - uses: actions/checkout@a5ac7e51b41094c92402da3b24376905380afc29 # v4.1.6
+      - uses: ./actions/add-review-labels-opened-pr
+        with:
+          GITHUB_TOKEN: ${{ steps.GITHUB_TOKEN }}
+          APP_ID: ${{ secrets.APP_ID }}
+          APP_PRIVATE_KEY: ${{ secrets.APP_PRIVATE_KEY }}
