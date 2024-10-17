@@ -9,7 +9,6 @@ import Example from './Example/Example';
 import { ThemeProvider } from './ThemeSelector/ThemeContext';
 import { ThemeDropdown } from './ThemeSelector/ThemeDropdown';
 import { UIShellHeader } from './Example/Header';
-import IconExample from './IconExample/IconExample';
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 
@@ -17,7 +16,7 @@ root.render(
   <React.StrictMode>
     <ThemeProvider>
       <UIShellHeader />
-      <IconExample />
+      <Example />
       <ThemeDropdown />
     </ThemeProvider>
   </React.StrictMode>
