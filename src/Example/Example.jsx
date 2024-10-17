@@ -1,10 +1,15 @@
-import React, { useState, useMemo, useEffect } from "react";
+import React from "react";
 import IconExample from "../IconExample/IconExample";
+import SizeComponents from "../SizeComponents/SizeComponents";
 
 function App() {
   return (
     <div className="examples-container">
       <IconExample />
+      <br />
+      <hr />
+      <br />
+      <SizeComponents />
     </div>
   );
 }
