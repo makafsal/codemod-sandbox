@@ -1,6 +1,7 @@
 import React from "react";
 import IconExample from "../IconExample/IconExample";
 import SizeComponents from "../SizeComponents/SizeComponents";
+import SmallPropExample from "../SmallPropExample/SmallPropExample";
 
 function App() {
   return (
@@ -10,6 +11,13 @@ function App() {
       <hr />
       <br />
       <SizeComponents />
+      <br />
+      <hr />
+      <br />
+      <SmallPropExample />
+      <br />
+      <hr />
+      <br />
     </div>
   );
 }
