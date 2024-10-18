@@ -1,4 +1,4 @@
-import { Accordion, AccordionItem } from "@carbon/react";
+import { Accordion, AccordionItem, ComboBox, DatePicker, DatePickerInput } from "@carbon/react";
 import React from "react";
 
 function SizeComponents() {
@@ -42,6 +42,21 @@ function SizeComponents() {
           </p>
         </AccordionItem>
       </Accordion>
+      <br />
+      <DatePicker datePickerType="range">
+        <DatePickerInput
+          id="date-picker-input-id-start"
+          placeholder="mm/dd/yyyy"
+          labelText="Start date"
+          size="compact"
+        />
+        <DatePickerInput
+          id="date-picker-input-id-finish"
+          placeholder="mm/dd/yyyy"
+          labelText="End date"
+          size="compact"
+        />
+      </DatePicker>
     </>
   );
 }
