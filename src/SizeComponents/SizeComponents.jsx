@@ -1,5 +1,10 @@
-import { Accordion, AccordionItem, ComboBox, DatePicker, DatePickerInput } from "@carbon/react";
 import React from "react";
+import {
+  Accordion,
+  AccordionItem,
+  DatePicker,
+  DatePickerInput
+} from "@carbon/react";
 
 function SizeComponents() {
   return (
