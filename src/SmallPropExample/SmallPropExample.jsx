@@ -5,7 +5,7 @@ function SmallPropExample() {
   return (
     <>
       <Button small>Button</Button>
-      <ButtonSkeleton small={true} />
+      <ButtonSkeleton small></ButtonSkeleton>
     </>
   );
 }
