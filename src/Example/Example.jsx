@@ -2,6 +2,7 @@ import React from "react";
 import IconExample from "../IconExample/IconExample";
 import SizeComponents from "../SizeComponents/SizeComponents";
 import SmallPropExample from "../SmallPropExample/SmallPropExample";
+import UnsortedPropExample from "../UnsortedPropExample/UnsortedPropExample";
 
 function App() {
   return (
@@ -17,6 +18,13 @@ function App() {
       <SmallPropExample />
       <br />
       <hr />
+      <br />
+      <UnsortedPropExample />
+      <br />
+      <hr />
+      <br />
+      <br />
+      <br />
       <br />
     </div>
   );
