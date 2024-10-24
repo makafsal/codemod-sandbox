@@ -1,24 +1,33 @@
-# `@carbon/ibm-products` starter template (vite)
-
-This template will scaffold an application using Carbon v11 and Carbon for IBM Products. Use this template to jump start your application with a completely pre-configured setup using `vite`.
-
-There is a prerequisite of having `degit` installed in order to get this template. To learn more about `degit`, see their [repository](https://github.com/Rich-Harris/degit).
-
-- [Carbon Design system](https://github.com/carbon-design-system/carbon)
-- [Carbon for IBM Products](https://github.com/carbon-design-system/ibm-cloud-cognitive)
+# codemod-sandbox
+> A Sandbox to try out `@carbon/upgrade` [package](https://github.com/carbon-design-system/carbon/tree/main/packages/upgrade) Codemods. 
 
 ## Getting started
 
 ```console
-# Start template creation
-degit matthewgallo/ibm-products-vite-template my-new-vite-template
+# Clone the repo
+git clone git@github.com:makafsal/codemod-sandbox.git
 
 # Change to app directory
-cd my-new-vite-template
+cd codemod-sandbox
+
+# Create your branch
+git checkout -b <branchName>
 
 # Install dependencies
 yarn
-
-# Start vite dev server
-yarn dev
 ```
+
+### Run Migration Transforms
+Please refer to the `@carbon/upgrade` usage section [here](https://github.com/carbon-design-system/carbon/tree/main/packages/upgrade#usage).
+
+### Run Transforms Using `jscodeshift`
+```console
+npx jscodeshift -t <path-to-transform> <path-to-file>
+```
+For example:
+```console
+npx jscodeshift -t node_modules/@carbon/upgrade/transforms/sort-prop-types.js src/UnsortedPropExample/UnsortedPropExample.jsx
+```
+
+## [Demo](https://github.com/carbon-design-system/ibm-products/issues/6155#issuecomment-2422282828)
+Please have a look at [Demo](https://github.com/carbon-design-system/ibm-products/issues/6155#issuecomment-2422282828).
