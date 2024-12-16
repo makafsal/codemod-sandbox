@@ -6,7 +6,7 @@ import {
 } from "@carbon/ibm-products";
 import "./_example.scss";
 
-export const Example = () => (
+export const HTTPErrorsExamples = () => (
   <>
     <HTTPError403
       description="You are not authorized to access this resource."
