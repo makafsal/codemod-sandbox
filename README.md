@@ -22,11 +22,11 @@ Please refer to the `@carbon/upgrade` usage section [here](https://github.com/ca
 
 ### Run Transforms Using `jscodeshift`
 ```console
-npx jscodeshift -t <path-to-transform> <path-to-file>
+npx @carbon/upgrade migrate <codemode-name> <path-to-file> --write
 ```
 For example:
 ```console
-npx jscodeshift -t node_modules/@carbon/upgrade/transforms/sort-prop-types.js src/UnsortedPropExample/UnsortedPropExample.jsx
+npx @carbon/upgrade migrate ibm-products-update-http-errors src/UnsortedPropExample/UnsortedPropExample.jsx --write
 ```
 
 ## [Demo](https://github.com/carbon-design-system/ibm-products/issues/6155#issuecomment-2422282828)
