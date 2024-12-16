@@ -724,10 +724,10 @@
     "@carbon/layout" "^11.21.0"
     "@ibm/telemetry-js" "^1.2.1"
 
-"@carbon/upgrade@^11.19.0":
-  version "11.19.0"
-  resolved "https://registry.npmjs.org/@carbon/upgrade/-/upgrade-11.19.0.tgz#058bba1ea9f7a6c3c4f58c561c3abd9e12043044"
-  integrity sha512-cFZVfXWV3jbM9mW6f4SGfdel9cX6sMphhWktEBcbMeHD+8+Ve/SZ/VdNWDGhD9dHQfXlJzxQ2kcwvjBmNozAdA==
+"@carbon/upgrade@^11.21.0":
+  version "11.21.0"
+  resolved "https://registry.npmjs.org/@carbon/upgrade/-/upgrade-11.21.0.tgz#ff5929e8da18686ad1c990ff7238af2148918c95"
+  integrity sha512-pqgPHDRlMDvt0ro0e3EMlwQO69UGNcCSNCSSbxsiptt/8YGZdB5u0ryy6b5GUlrspDvnHEu4Q5IY39RRlibY+g==
   dependencies:
     "@ibm/telemetry-js" "^1.5.0"
     jscodeshift "^17.0.0"
