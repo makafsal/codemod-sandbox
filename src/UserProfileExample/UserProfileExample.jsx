@@ -5,7 +5,7 @@ import { Add } from "@carbon/react/icons";
 const ImageUrl =
   "https://img.freepik.com/free-photo/portrait-man-cartoon-style_23-2151133939.jpg?semt=ais_hybrid";
 
-export const UserAvatarExample = () => (
+export const UserProfileExample = () => (
   <>
     <UserProfileImage
       size="md"
